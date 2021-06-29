@@ -14,3 +14,11 @@ app = Flask(__name__)
 @app.route('/index')
 def index():
     return "hello world"
+
+@app.route('/secret')
+def secret():
+    return "this is a secret page"
+
+@app.route('/jeff')
+def jeff():
+    return "<h1>MY NAME IS JEFF!</h1> <img src='https://media1.tenor.com/images/bdae5cd93f9ec469fdd2e27af1d7a5ed/tenor.gif?itemid=8025876'/>"
